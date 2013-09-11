@@ -13,7 +13,7 @@ CommentQC (quality control) is an experiment of mine to see how well programmati
 * Being a grammar nazi. It doesn't, nor should you make it, reject comments for petty mistakes like _your_ and _you're_. There's a line between quality control and being an ass.
 * Fixing broken comments. It won't attempt to rescue a bad comment, the system either accepts or rejects.
 
-### I'm sold, how do I use it?
+#### I'm sold, how do I use it?
 A codeblock speaks a thousand words.
 
 ```php
