@@ -11,12 +11,16 @@ require 'src/iBones/CommentQC.php';
 $should_pass = array(
 	'Grumpy wizards make toxic brew for the evil Queen and Jack.',
 	'The quick brown fox jumps over the lazy dog.',
+	'I enjoyed your blog post.',
+	'freshen your drink, governor?',
 );
-
+ 
 $should_fail = array(
 	'Plz help meeeeeee',
 	'how to do this ??',
 	'ur a faggot',
+	'PLS PLSSS I NEED IT',
+	'ur a FAGGOT!!!'
 );
 
 foreach ( $should_pass as $comment ) {
