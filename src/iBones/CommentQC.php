@@ -37,24 +37,18 @@ class CommentQC
 		}
 		
 		// Is there a long stretch of the same letter? Helloooooooooooo?
-		if ( preg_match("/([a-zA-Z])\\1{5}/", $this->comment) ) {
+		if ( preg_match("/([a-zA-Z\?\!\.\,\:\;])\\1{5}/", $this->comment) ) {
 			return false;
 		}
 		
 		// Are there spaces before punctuation ? like this ???? isn't this annoying ????!
-		$fails = array('?', '!', '.', ',', ':', ';');
-		foreach ( $fails as $fail ) {
-			if ( preg_match("/ (\\" . $fail . "*)/", $this->comment) ) {
-				return false;
-			}
+		if ( preg_match("/ [\?\!\.\,\:\;]/", $this->comment) ) {
+			return false;
 		}
 		
 		// Any inexcusable shorthand? PLZZZZ BRO???????????
-		$fails = array('plz', 'pls', 'ur');
-		foreach ( $fails as $fail ) {
-			if ( preg_match("/\b" . $fail . "\b/i", $this->comment) ) {
-				return false;
-			}
+		if ( preg_match("/\b(pls|plz|ur)\b/i", $this->comment) ) {
+			return false;
 		}
 		
 		// If we got this far, we're all good.
