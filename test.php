@@ -20,7 +20,7 @@ $should_fail = array(
 	'how to do this ??',
 	'ur a faggot',
 	'PLS PLSSS I NEED IT',
-	'ur a FAGGOT!!!'
+	'UR FAGGOT!!!'
 );
 
 foreach ( $should_pass as $comment ) {
