@@ -61,6 +61,6 @@ class CommentQC
 	 */
 	public function commentFails()
 	{
-		return $this->commentPasses() == true ? false : true;
+		return !$this->commentPasses();
 	}
 }
