@@ -32,3 +32,7 @@ If you want to check for failure instead of success, the `commentFails()` method
 
 ### Plugins
 A plugin for [MyBB](http://mybb.com) exists in the plugins directory. If you write one for another platform, a pull request is appreciated.
+
+### To-Do
+* A way of ignoring syntax between configurable markers, such as quote and code tags
+* Allowing opt-in or opt-out of each check
