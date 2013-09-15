@@ -29,3 +29,6 @@ if ( $checker->commentPasses() ) {
 ```
 
 If you want to check for failure instead of success, the `commentFails()` method will simply return the reverse.
+
+### Plugins
+A plugin for [MyBB](http://mybb.com) exists in the plugins directory. If you write one for another platform, a pull request is appreciated.

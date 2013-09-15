@@ -1,0 +1,5 @@
+Instructions for the CommentQC plugin for MyBB
+
+1. Ensure you have the CommentQC.php file from http://github.com/ibones/commentqc and upload it to /inc/3rdparty
+2. Upload the plugin file to /inc/plugins
+3. Install, configure, and enjoy
